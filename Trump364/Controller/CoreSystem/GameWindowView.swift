@@ -113,6 +113,10 @@ class GameWindowView {
     
         }
     
+    
+    //カードがフリップした時の動作
+    //Flip animation iOS Swift - Creating a flip card animation with Xcode 9 Swift 4
+    //https://www.youtube.com/watch?v=4kSLbuB-MlU
 }
         
 
