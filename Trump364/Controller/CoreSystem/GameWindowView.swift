@@ -15,9 +15,7 @@ class GameWindowView {
     //GenerateRandomNumberDoNotRepeatを継承して、ランダムに生成するところまでを行います。
     //ここでCircleProgressBarの色をゲームモードに応じて変更するのもアリかも。
 
-    
-    init() {
-    }
+
     
 
     //ここでGameDegreeでUserDefaultsに入れた数値の数だけGameCourceImageの写真を取り出し、さらに乱数を用いて中身を入れ替える。
