@@ -7,3 +7,5 @@
 //
 
 import Foundation
+
+//ここにトランプ画像のassetを格納しておく

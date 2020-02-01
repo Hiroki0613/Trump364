@@ -9,7 +9,7 @@
 import UIKit
 
 class GameActionViewController: UIViewController {
-
+    
     //ここはゲーム画面のコードを書く箇所です。
     //GameActionBranchで決定したゲーム内容UXをクラスを使って実装
     //GameWindowViewで実装したUIをクラスを使って実装
@@ -17,7 +17,7 @@ class GameActionViewController: UIViewController {
     
     //丸型プログレスバーの実装
     @IBOutlet weak var circleProgressBar: CircleProgressBar!
-   
+    
     var gameWindowView = GameWindowView()
     var gameActionBranch = GameActionBranch()
     
@@ -40,7 +40,7 @@ class GameActionViewController: UIViewController {
     //3,2,1の数値を用意
     var countDownTimerCount = 4
     var countDownTimerLabel = UILabel()
-//    var countFired: CGFloat = 4
+    //    var countFired: CGFloat = 4
     
     
     
@@ -66,18 +66,18 @@ class GameActionViewController: UIViewController {
         
         //GameWindowViewControllerで選んだ物（配列から取り出し、ランダムに入れ替えたもの）を呼び出す。
         //ここで配列を呼び出そうとしても、おかしな配列が出てしまう・・・
-//        print(gameWindowView.generateRamdomNumberUsedUserDefaults())
-//        print(gameWindowView.generateRamdomNumberUsedUserDefaults().self)
+        //        print(gameWindowView.generateRamdomNumberUsedUserDefaults())
+        //        print(gameWindowView.generateRamdomNumberUsedUserDefaults().self)
         
         
         
         //CircleProgressBarで使用するモードを呼び出す（タイマーor進捗状況など）
         //今回は進捗状況のみにする
-
-
         
         
-
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -96,7 +96,7 @@ class GameActionViewController: UIViewController {
         countDownTimerLabel.font = UIFont(name: "HiraginoSans-W6", size: 60)
         countDownTimerLabel.textColor = UIColor.black
         self.view.addSubview(countDownTimerLabel)
-
+        
         
         print("startButtonが押されました")
         gameStartButton.isHidden = true
@@ -140,7 +140,7 @@ class GameActionViewController: UIViewController {
     
     
     
-
+    
     
     //ゲーム終了後
     //ナビゲーションバーを再表示するコードを入れる、画面遷移前に用意する？
@@ -149,7 +149,7 @@ class GameActionViewController: UIViewController {
     
     //ゲーム終了後←将来的な実装
     //正答率の答え合わせをする画面に移行する（ここに広告）。詳細はさらに別画面で紹介
-
+    
     
     
     
@@ -160,15 +160,15 @@ class GameActionViewController: UIViewController {
         
         if count > 4 {
             
-//            gameCourseImageView.image = UIImage(named: "\(gameWindowView.generateRamdomNumberUsedUserDefaultsImage()[count])")
+            //            gameCourseImageView.image = UIImage(named: "\(gameWindowView.generateRamdomNumberUsedUserDefaultsImage()[count])")
             gameCourseImageView.image = UIImage(named: "\(imageArray[count])")
             
             count = -1
         } else {
-//            gameCourseImageView.image = UIImage(named: "\(gameWindowView.generateRamdomNumberUsedUserDefaultsImage()[count])")
+            //            gameCourseImageView.image = UIImage(named: "\(gameWindowView.generateRamdomNumberUsedUserDefaultsImage()[count])")
             gameCourseImageView.image = UIImage(named: "\(imageArray[count])")
         }
-         count = count + 1
+        count = count + 1
     }
     
 }

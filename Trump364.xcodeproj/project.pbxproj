@@ -111,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				F57FA14E22F6C61C00A1DDA8 /* GameProperty.swift */,
+				F5827EB122E4AC2600465B10 /* GameCourseImage */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -130,7 +131,6 @@
 			children = (
 				F5827EB022E4ABF200465B10 /* CoreSystem */,
 				F500B02422ED967A001533B6 /* SelectGamePattern */,
-				F5827EB122E4AC2600465B10 /* GameCourseImage */,
 				F500B04F22F085C3001533B6 /* GameAction */,
 				F529637D22CA428D00D6663A /* AppDelegate.swift */,
 			);

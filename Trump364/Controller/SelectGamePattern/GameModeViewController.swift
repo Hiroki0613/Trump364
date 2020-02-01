@@ -10,7 +10,7 @@ import UIKit
 
 class GameModeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-    //ここはゲーム選択肢のコードを書く場所です。ここから下をコピーペーストすることでゲームの拡張性を持たせています。
+    //ここはゲーム選択肢のコードを書く場所です。ここから下↓↓↓をコピーペーストすることでゲームの拡張性を持たせています。
     
     @IBOutlet weak var gameModeTableView: UITableView!
     
